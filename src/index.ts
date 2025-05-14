@@ -55,6 +55,8 @@ async function main(): Promise<void> {
     const authorization = await client.signAuthorization({
       account,
       contractAddress: delegateAddress as Hex,
+      chainId: chain.id,
+      executor: "self",
     });
 
     // Send transaction with authorization
