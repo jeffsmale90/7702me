@@ -1,0 +1,49 @@
+{
+  "name": "7702me",
+  "version": "0.0.1",
+  "description": "CLI tool for upgrading Ethereum accounts with EIP-7702",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "7702me": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ethereum",
+    "eip-7702",
+    "account-abstraction",
+    "cli",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
+    "viem": "^2.7.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffsmale90/7702me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeffsmale90/7702me/issues"
+  },
+  "homepage": "https://github.com/jeffsmale90/7702me#readme",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
